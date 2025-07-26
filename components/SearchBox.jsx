@@ -34,7 +34,9 @@ export default function SearchBox({ service }) {
           <MapPinIcon className="w-5 h-5 absolute top-3 left-3 text-gray-400" />
           <input
             type="text"
-            placeholder={service === "flights" ? "From city or airport" : "Location"}
+            placeholder={
+              service === "flights" ? "From city or airport" : "Location"
+            }
             value={from}
             onChange={(e) => setFrom(e.target.value)}
             className="pl-10 w-full p-2 border rounded-lg bg-white dark:bg-gray-700 dark:text-white"
