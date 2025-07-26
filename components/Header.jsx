@@ -24,7 +24,11 @@ export default function Header() {
           className="sm:hidden p-2 text-gray-700 dark:text-gray-300"
           onClick={() => setOpen((o) => !o)}
         >
-          {open ? <XMarkIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
+          {open ? (
+            <XMarkIcon className="h-6 w-6" />
+          ) : (
+            <MenuIcon className="h-6 w-6" />
+          )}
         </button>
 
         {/* Links */}
@@ -39,5 +43,5 @@ export default function Header() {
         </nav>
       </div>
     </header>
-);
+  );
 }
