@@ -1,7 +1,6 @@
-// components/Header.jsx
 import { useState } from "react";
 import Link from "next/link";
-import { MenuIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"; // <-- Bars3Icon replaces MenuIcon
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -27,7 +26,7 @@ export default function Header() {
           {open ? (
             <XMarkIcon className="h-6 w-6" />
           ) : (
-            <MenuIcon className="h-6 w-6" />
+            <Bars3Icon className="h-6 w-6" />
           )}
         </button>
 
